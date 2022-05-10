@@ -47,7 +47,28 @@ However when running agents in different locations, with different access or dif
 
 ## Agent Installation&#x20;
 
+### Binary installation
+
+**Java 8+** is required for running the Testing Agent.&#x20;
+
+If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version.
+
+Download the **latest version** of the Conduktor Testing Agent:
+
+[https://github.com/conduktor/testing/releases/](https://github.com/conduktor/testing/releases/)
+
+**Run** the below command via command line, populating the token parameter with your newly generated token.
+
+```
+java -jar conduktor-testing-agent-*.jar --token=<TOKEN>
+```
+
 ### Container installation
+
+{% hint style="info" %}
+Using Docker introduces complexity when trying to reach clusters on localhost or reference certificates on your local file system. \
+For these use cases, we recommend using the [binary distribution](install-the-testing-agent.md#binary-installation).
+{% endhint %}
 
 **Container image**: `ghcr.io/conduktor/testing-agent:latest`\
 \
@@ -70,21 +91,7 @@ services:
       AGENT_TOKEN: <TOKEN>
 ```
 
-### Binary installation
 
-**Java 8+** is required for running the Testing Agent.&#x20;
-
-If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version.
-
-Download the **latest version** of the Conduktor Testing Agent:
-
-[https://github.com/conduktor/testing/releases/](https://github.com/conduktor/testing/releases/)
-
-**Run** the below command via command line, populating the token parameter with your newly generated token.
-
-```
-java -jar conduktor-testing-agent-*.jar --token=<TOKEN>
-```
 
 ### Running in the CI
 
