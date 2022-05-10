@@ -2,52 +2,18 @@
 
 The Testing Agent is a micro-application that runs on your desktop, private network or CI environment. It ensures you can reach clusters that your host has access to securely and with isolation.
 
-**You must install** the Testing Agent to run [Test Scenarios](../features/building-tests/test-scenarios.md). **** Setup takes only a minute using a single command.
+First, **register** the Testing Agent in your Workspace.
 
-The general **** flow **** for utilization of the Agent is:
+Then, **install** the Testing Agent to run [Test Scenarios](../features/building-tests/test-scenarios.md). ****&#x20;
 
-* User downloads the Testing Agent
-* User registers an Agent inside the Testing application and obtains a token
-* User runs a command on their host to start the Agent
-* The Agent is now installed
-* The Testing application can now reach clusters that your host has access to
+{% hint style="success" %}
+Testing Agent can be installed and used on GNU/Linux, macOS, FreeBSD, and Windows. You can install it:
 
-## Download the Testing Agent
+* In a container.
+* By downloading a binary manually.
+{% endhint %}
 
-Download the **latest version** of the Conduktor Testing Agent:
-
-### [https://github.com/conduktor/testing/releases/](https://github.com/conduktor/testing/releases/)
-
-### Java Requirements
-
-**Java 8+** is required for running the Testing Agent.&#x20;
-
-If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version.\
-
-
-### Using Docker
-
-We also provide a docker image of the agent. For local agents we suggest using the jar release, as reaching local clusters and using local certificate stores on docker will require some configuration.\
-\
-**Container image**: `ghcr.io/conduktor/testing-agent:latest`
-
-The versions correspond to those listed in [https://github.com/conduktor/testing/releases/](https://github.com/conduktor/testing/releases/) \
-\
-You will need to provide the agent token as well, through the **AGENT\_TOKEN** environment variable
-
-`docker run -e AGENT_TOKEN=YourToken -d ghcr.io/conduktor/testing-agent:latest`
-
-
-
-### Running in the CI
-
-The Testing Agent is long-running, and should not be used in a CI.
-
-For CI workflows, please read [our dedicated documentation](../features/ci-cd-automation.md).
-
-
-
-## Register an Agent&#x20;
+## Agent Registration&#x20;
 
 From within the Conduktor Testing UI, navigate to the **Tokens** tab. Note you may need to create a [Workspace](../features/workspace.md) first.
 
@@ -66,24 +32,67 @@ Provide a **Name** to identify your agent, and confirm if it will be personal, o
 
 Select **Create token** to generate your token on the next screen.&#x20;
 
-{% hint style="info" %}
+{% hint style="danger" %}
 You will only be shown the token **once**, so ensure you store it somewhere securely.&#x20;
 {% endhint %}
 
 ![](<../.gitbook/assets/image (73).png>)
 
-**Copy** the token, as we will use it in the final step.\
-\
-A single token can be used by multiple agents, allowing it to scale horizontally. \
+**Copy** the token, as we will use it in the next step.
+
+{% hint style="success" %}
+A token can be used by **multiple** agents, allowing it to scale horizontally. \
 However when running agents in different locations, with different access or different resources, you should create separate tokens.
+{% endhint %}
 
-## Start the Testing Agent
+## Agent Installation&#x20;
 
-**Run** the below command via command line. populating the token parameter with your newly generated token.
+### Container installation
+
+**Container image**: `ghcr.io/conduktor/testing-agent:latest`\
+\
+You will need to provide the agent token as well, through the **AGENT\_TOKEN** environment variable
+
+**Run** with Docker:
 
 ```
-java -jar conduktor-testing-agent-0.10.0.jar --token=<token>
+docker run -e AGENT_TOKEN=<TOKEN> -d ghcr.io/conduktor/testing-agent:latest
 ```
+
+**Run** with Docker Compose:
+
+```
+# docker-compose.yaml
+services:
+  testing-agent:
+    image: ghcr.io/conduktor/testing-agent:latest
+    environment:
+      AGENT_TOKEN: <TOKEN>
+```
+
+### Binary installation
+
+**Java 8+** is required for running the Testing Agent.&#x20;
+
+If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version.
+
+Download the **latest version** of the Conduktor Testing Agent:
+
+[https://github.com/conduktor/testing/releases/](https://github.com/conduktor/testing/releases/)
+
+**Run** the below command via command line, populating the token parameter with your newly generated token.
+
+```
+java -jar conduktor-testing-agent-*.jar --token=<TOKEN>
+```
+
+### Running in the CI
+
+The Testing Agent is a long-running process, and should not be used in a CI pipeline.
+
+For CI workflows, please read [our dedicated documentation](../features/ci-cd-automation.md).
+
+## Validate the Testing Agent
 
 You should see `Started Agent` in the logs.&#x20;
 
