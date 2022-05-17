@@ -72,12 +72,12 @@ For these use cases, we recommend using the [binary distribution](install-the-te
 
 **Container image**: `ghcr.io/conduktor/testing-agent:latest`\
 \
-You will need to provide the agent token as well, through the **AGENT\_TOKEN** environment variable
+You will need to provide the agent token as well, through the **TOKEN** environment variable
 
 **Run** with Docker:
 
 ```
-docker run -e AGENT_TOKEN=<TOKEN> -d ghcr.io/conduktor/testing-agent:latest
+docker run -e TOKEN=<TOKEN> -d ghcr.io/conduktor/testing-agent:latest
 ```
 
 **Run** with Docker Compose:
@@ -88,7 +88,7 @@ services:
   testing-agent:
     image: ghcr.io/conduktor/testing-agent:latest
     environment:
-      AGENT_TOKEN: <TOKEN>
+      TOKEN: <TOKEN>
 ```
 
 
