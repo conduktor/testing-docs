@@ -99,9 +99,11 @@ Create the **Kafka cluster** **API key.** You also have the option to create the
 
 **Copy** the configuration to your clipboard.
 
-From within the cluster configuration modal of the Testing application, **switch view** to enable the free text input. **Paste** your configuration as additional properties.
+From within the cluster configuration modal of the Testing application, **Paste** your configuration as additional properties.
 
-**Note:** You will need to remove any comments from the configuration, and move the bootstrap server URL to the correct input.&#x20;
+{% hint style="warning" %}
+**Note:** You will need to **remove any comments from the configuration**, and **move the bootstrap server URL** to the correct form input. If you are not using the schema registry, you can also remove these properties.
+{% endhint %}
 
 **Refresh** the connection and if successful, you will see the **CONNECTED** label turn green.
 
