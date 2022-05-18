@@ -6,13 +6,13 @@ The ability to reach your cluster will depend on where you have installed the [T
 
 **Quick links:**
 
-* [Adding a cluster](connect-to-a-kafka-cluster.md#undefined)
-* [Schema Registry](connect-to-a-kafka-cluster.md#undefined)
-* [Connect to a local Kafka cluster](connect-to-a-kafka-cluster.md#connecting-to-a-local-cluster)
-* [Connect to a secure Kafka cluster](https://docs.conduktor.io/kafka-cluster-connection/setting-up-a-connection-to-kafka/connect-to-amazon-msk)
-* [Connect to a Confluent cluster](connect-to-a-kafka-cluster.md#connecting-to-a-confluent-cluster)
-* [Connect to an Aiven cluster](connect-to-a-kafka-cluster.md#connecting-to-an-aiven-cluster)
-* [Connect to a Red Hat cluster](connect-to-a-kafka-cluster.md#undefined)
+* [Adding a cluster](connect-to-a-kafka-cluster.md#adding-a-cluster)
+* [Schema Registry](connect-to-a-kafka-cluster.md#schema-registry)
+* [Connect to a local Kafka cluster](connect-to-a-kafka-cluster.md#connect-to-a-local-kafka-cluster)
+* [Connect to a secure Kafka cluster](connect-to-a-kafka-cluster.md#connect-to-a-secure-kafka-cluster)
+* [Connect to a Confluent cluster](connect-to-a-kafka-cluster.md#connect-to-a-confluent-cluster)
+* [Connect to an Aiven cluster](connect-to-a-kafka-cluster.md#connect-to-an-aiven-cluster)
+* [Connect to a Red Hat cluster](connect-to-a-kafka-cluster.md#connect-to-a-red-hat-cluster)
 * [Connect to an MSK cluster](connect-to-a-kafka-cluster.md#connecting-to-an-msk-cluster)
 
 ## Adding a cluster
@@ -105,7 +105,7 @@ From within the cluster configuration modal of the Testing application, **switch
 
 **Refresh** the connection and if successful, you will see the **CONNECTED** label turn green.
 
-![](<../.gitbook/assets/image (76).png>)
+![](<../.gitbook/assets/image (24).png>)
 
 Click **Create Cluster** to save your cluster.&#x20;
 
@@ -139,7 +139,7 @@ It's important that the [Testing Agent](install-the-testing-agent.md) is install
 
 Select **Connection** from your Red Hat Kafka Instance
 
-![](<../.gitbook/assets/image (125).png>)
+![](<../.gitbook/assets/image (11).png>)
 
 From within the slide-out menu, choose **Create service account**
 
@@ -147,7 +147,7 @@ From within the slide-out menu, choose **Create service account**
 
 Text
 
-![](<../.gitbook/assets/image (145).png>)
+![](<../.gitbook/assets/image (126).png>)
 
 Create a cluster inside Conduktor Testing using the below additional properties.
 
