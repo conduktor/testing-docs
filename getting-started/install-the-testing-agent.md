@@ -49,7 +49,7 @@ However when running agents in different locations, with different access or dif
 
 ### Binary installation
 
-**Java 8+** is required for running the Testing Agent.&#x20;
+**Java 11+** is required for running the Testing Agent (Java 8+ will be supported in the near future).
 
 If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version.
 
