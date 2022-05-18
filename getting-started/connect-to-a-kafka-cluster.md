@@ -53,7 +53,7 @@ Select the **Schema registry** tab from within the cluster configuration modal t
 
 You are able to connect to a Kafka cluster that is running on your localhost. For example, a cluster that has been started via [Docker](https://github.com/conduktor/kafka-stack-docker-compose), or via the Kafka binaries.&#x20;
 
-**The only pre-requisite** is that the [Testing Agent](install-the-testing-agent.md) is installed on the host that your cluster is running.
+**The only pre-requisite** is that the [Testing Agent](install-the-testing-agent.md) is running on a host that has access to your cluster.
 
 {% hint style="success" %}
 **Pro tip!** You can [start a Kafka cluster in seconds](https://docs.conduktor.io/kafka-cluster-connection/starting-a-local-kafka-cluster-in-seconds) using our other product, Conduktor Desktop
