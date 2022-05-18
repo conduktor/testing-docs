@@ -127,7 +127,7 @@ For example:
 ssl.keystore.location = /path/to/client.keystore.p12
 ```
 
-It's important that the [Testing Agent](install-the-testing-agent.md) is installed on the same host as these files.
+It's important that the [Testing Agent](install-the-testing-agent.md) is running on a host with access to these files.
 
 ![](<../.gitbook/assets/image (138).png>)
 
