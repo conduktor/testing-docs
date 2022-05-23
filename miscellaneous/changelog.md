@@ -1,5 +1,65 @@
 # Changelog
 
+### 0.12.0
+
+#### Features:
+
+* Improve agent resiliency in case of server disconnection (resume executions)
+* Add support for [Schema References](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/index.html#schema-references)&#x20;
+* Set execution status to Lost after some time (in case an agent was shut down for example)
+* Allow renaming tasks from the Editor view
+* Allow returning to configuration from CI/CD run modal
+
+#### Bug Fixes:
+
+* Assertions should not result in error when the value is null
+* IsNull operator may fail with null JSON
+* Mark executions as error if agent is not reachable
+* Platform stability improvements
+* Fix Cluster displayed as "connected" when no agent is up
+* Fix a bug when converting Producer task DSL to form (causing `Error in Producter: No stop condition selected` on execution)
+* Fix conversion from Producer Form to DSL losing schema details
+* Fix some UI alignment issues on wide screens
+* Remove confusing X in Topic Preview, closing the slideout
+
+**Known issues:**
+
+**Other notes:**
+
+****
+
+### 0.11.0
+
+#### Features:
+
+* Agent :&#x20;
+  * Add Docker release
+  * Accept both environment variables and arguments to start the agent
+* UI improvements
+  * new Tabs component
+  * Scenario name in breadcrumb now leads to Editor
+  * Agent selection is now scrollable
+  * Add a Manage environment button in environment select
+
+#### Bug Fixes:
+
+* Scenario not using Registry should not fail if registry is unreachable
+* Random bytes generation failed with "Illegal character"
+* Fix an issue where an assertion failure would sometimes not trigger the execution failure
+* Fix agent disconnecting after a period of inactivity
+* Fix back navigation in execution always going to Insight view
+* Prevent using special characters for variables and environment variables
+
+
+
+**Known issues:**
+
+**Other notes:**
+
+###
+
+###
+
 ### 0.10.0 - Public Beta - 09/05/22
 
 Initial public release enabling E2E Kafka testing scenarios. Release inclusive of the Conduktor Testing UI, and the agent micro-application enabling users to reach clusters that the host has access to securely and with isolation.
