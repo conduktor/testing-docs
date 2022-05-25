@@ -2,7 +2,7 @@
 description: Learn how to test the end-to-end flow of an event-driven architecture
 ---
 
-# Event-Driven Retail Sytem
+# Event-Driven Retail System
 
 In this tutorial, we will demonstrate how to compose an end-to-end Test Scenario for an event-driven system composing of multiple topics. This tutorial will demonstrate:
 
@@ -125,4 +125,4 @@ Navigating to the **Checks** tab will detail the result of any [Test Checks](../
 
 ![](<../.gitbook/assets/Screenshot 2022-05-25 at 17.50.50.png>)
 
-**Great!** We have our identified the components in our system that are passing, and those that are currently failing. Now we can begin to address the reasons for failure!&#x20;
+**Great!** We have our identified the components in our system that are passing, and those that are currently failing. Now we can start to address the reasons for failure!&#x20;

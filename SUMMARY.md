@@ -42,4 +42,4 @@
 
 ## Tutorials
 
-* [Event-Driven Retail Sytem](tutorials/event-driven-retail-sytem.md)
+* [Event-Driven Retail System](tutorials/event-driven-retail-system.md)
