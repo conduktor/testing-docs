@@ -119,7 +119,9 @@ In the above case, we can see the end-to-end test scenario has **failed**. Hover
 >
 > This means that the business SLA of 500ms was not met.
 
-Navigating to the **Checks** tab will detail the result of any [Test Checks](../features/building-tests/test-checks/). In this case the check on the enriched data was successful.&#x20;
+Navigating to the **Checks** tab will detail the result of any [Test Checks](../features/building-tests/test-checks/). In this case, the check on the enriched data was successful.&#x20;
+
+> userId `12345` was correctly attributed to a `Free` plan by the User Service
 
 ![](<../.gitbook/assets/Screenshot 2022-05-25 at 17.50.50.png>)
 
