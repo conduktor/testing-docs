@@ -68,7 +68,7 @@ If messages were continuously being produced into this topic, we would need to u
 Below shows the expected output for an **enriched** message.&#x20;
 
 ```json
-// Consumed Record 
+// Consumed Message 
 {
    "TIMESTAMP":1652012999698,
    "USERID":12345,
@@ -80,7 +80,7 @@ Below shows the expected output for an **enriched** message.&#x20;
 }
 ```
 
-To validate the User Service is working correctly, we will create a [Test Check](../features/building-tests/test-checks/) on the consumed record.
+To validate the User Service is working correctly, we will create a [Test Check](../features/building-tests/test-checks/) on the consumed message.
 
 * Navigate to the **Checks** tab
 * The 'Plan Type' attribute is the result of **message enrichment**
