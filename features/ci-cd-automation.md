@@ -40,7 +40,7 @@ On the next screen, you will be displayed the **CI configuration.** This will be
 
 **Copy** the JSON to the clipboard.
 
-![](<../.gitbook/assets/image (59).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 ## Using the CI Configuration
 

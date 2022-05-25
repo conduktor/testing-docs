@@ -14,7 +14,7 @@ In the below example, the [Test Check](./) has **failed** because the expected v
 
 _Any test checks that fail will cause the Test Scenario to be considered a fail._
 
-![](<../../../.gitbook/assets/image (52).png>)
+![](<../../../.gitbook/assets/image (72).png>)
 
 In the below example, the Test Check has **succeeded.**
 

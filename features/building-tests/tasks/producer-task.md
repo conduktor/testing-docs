@@ -41,7 +41,7 @@ Currently supported SerDes formats:
 
 When inside the editor for a new scenario, select the **Start Scenario** button and select **Producer** from the dropdown menu.
 
-![](<../../../.gitbook/assets/image (131).png>)
+![](<../../../.gitbook/assets/image (53).png>)
 
 Give your task an appropriate **name**, and select the **Cluster** and **Topic** that you want to produce data to. If you do not have a Cluster configured, [add one ](../../../getting-started/connect-to-a-kafka-cluster.md)first.&#x20;
 
@@ -73,7 +73,7 @@ This can be useful if data is constantly being produced into your topic, and you
 
 From the **Data** tab of a Producer task, scroll down to the **Headers** section. Add your properties as key and value pairs using this module.
 
-![](<../../../.gitbook/assets/image (70).png>)
+![](<../../../.gitbook/assets/image (170).png>)
 
 Read more about how to use **header filters** in [Consumer](consumer-task.md) Tasks.
 

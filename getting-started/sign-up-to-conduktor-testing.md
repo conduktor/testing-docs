@@ -6,7 +6,7 @@ Conduktor Testing is a web application that can be reached through our website. 
 
 If you do not yet have a Conduktor account, you will need to sign-up first.&#x20;
 
-To get started, select the **Sign Up** button from the top-right hand corner of our [website](https://conduktor.io).&#x20;
+To get started, select the **Sign Up** button from the top-right hand corner of our [website](https://conduktor.io/).&#x20;
 
 ![](<../.gitbook/assets/image (168).png>)
 
@@ -18,7 +18,7 @@ During signup, you will be asked to create an **organization.**&#x20;
 
 Note that the organization name will be used in the URL used to access Conduktor Testing.&#x20;
 
-![](<../.gitbook/assets/image (174).png>)
+![](<../.gitbook/assets/image (27) (1).png>)
 
 **Invite any colleagues** that you would like to collaborate with inside Conduktor Testing.
 
@@ -30,5 +30,5 @@ When you have completed sign-up, select **Conduktor Testing** from the product s
 
 You will be redirected to the Conduktor Testing landing page. The first step is to **create a** [**Workspace**](../features/workspace.md)**.**&#x20;
 
-![](<../.gitbook/assets/image (129).png>)
+![](<../.gitbook/assets/image (115).png>)
 

@@ -39,3 +39,7 @@
 * [FAQ](miscellaneous/faq.md)
 * [Data Security](miscellaneous/data-security.md)
 * [Changelog](miscellaneous/changelog.md)
+
+## Tutorials
+
+* [Event-Driven Retail Sytem](tutorials/event-driven-retail-sytem.md)

@@ -61,7 +61,7 @@ The Consumer task is configured with **default lifecycle rules**. It will stop w
 
 However, you can amend these to suit your needs within the **Lifecycle** section.
 
-![](<../../../.gitbook/assets/image (142).png>)
+![](<../../../.gitbook/assets/image (97).png>)
 
 To learn about adding checks (tests) on data consumed from Kafka, move on to **** [**Test Checks**](../test-checks/).&#x20;
 
@@ -86,4 +86,4 @@ Also, you can configure your filter rules with **two conditions**:
 
 To add filters to your Consumer task, navigate to the **Data** tab when in edit mode. Under the **Filters** header, click the '**+**' button to add a new filter.
 
-![](<../../../.gitbook/assets/image (86).png>)
+![](<../../../.gitbook/assets/image (74).png>)

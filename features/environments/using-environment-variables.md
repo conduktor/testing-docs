@@ -28,7 +28,7 @@ In the consumer task, you could create a check to validates if the sessionId in 
 
 _Note to resolve your variable correctly, you **must have an environment selected!**_
 
-![](<../../.gitbook/assets/image (78).png>)
+![](<../../.gitbook/assets/image (146).png>)
 
 ## Template selection (Mustache)
 
@@ -38,7 +38,7 @@ In this case, you will be provided a helper modal when clicking the **'+'** butt
 
 Within this modal, select from an available list of environment variables.
 
-![](<../../.gitbook/assets/image (161).png>)
+![](<../../.gitbook/assets/image (118).png>)
 
 ## JavaScript
 

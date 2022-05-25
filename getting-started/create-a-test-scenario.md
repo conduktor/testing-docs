@@ -14,7 +14,7 @@ From within your [Workspace](../features/workspace.md), navigate to the **Test S
 
 Give your test suite a name, for example, 'My First Test Suite'.
 
-![](<../.gitbook/assets/image (157).png>)
+![](<../.gitbook/assets/image (34).png>)
 
 ## Create a Test Scenario
 
@@ -36,13 +36,13 @@ In the **General** tab, select a configured **Cluster,** and choose the **Topic*
 **Pro Tip:** Use the **Topic preview** button to fetch sample records from your Kafka topic
 {% endhint %}
 
-![](<../.gitbook/assets/image (148).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 Navigate to the **Data** tab and select the **serialization format** for your message key/value.&#x20;
 
 With **String** selected as the value format, enter the value `Hello World`
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (158).png>)
 
 Select **Save** to add your Produce task to the graph.
 
@@ -84,7 +84,7 @@ Select the **+ button** to add a new test check:
 
 Select **Save** to add the Consume task to the editor.
 
-![](<../.gitbook/assets/image (79).png>)
+![](<../.gitbook/assets/image (18).png>)
 
 ## Execute your Test Scenario
 
@@ -94,4 +94,4 @@ _Note you must have a connected agent selected via the left navigation menu._
 
 Navigate to the **Checks** tab to see the result of any [Test Checks](../features/building-tests/test-checks/).
 
-![](<../.gitbook/assets/image (39).png>)
+![](<../.gitbook/assets/image (123).png>)

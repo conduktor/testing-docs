@@ -52,7 +52,7 @@ When Template is used, click inside the input to show a **'+'** button.
 
 This will render a modal that presents any configured variables for selection.&#x20;
 
-![](<../.gitbook/assets/image (29).png>)
+![](<../.gitbook/assets/image (153).png>)
 
 When using JSON format to define data, it's possible to use the mustache selection to populate the key or value for a specific node.
 

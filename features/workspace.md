@@ -14,7 +14,7 @@ Within your organisation, it's possible to **create multiple workspaces**.&#x20;
 
 To do this, select the active workspace from the left-side navigation menu. Use the **Create New Workspace** button to create additional workspaces.
 
-![](<../.gitbook/assets/image (91).png>)
+![](<../.gitbook/assets/image (87).png>)
 
 ## Workspace Settings
 
@@ -28,7 +28,7 @@ From within the Workspace Settings, you have the option to:
 * Assign your workspace a new colour
 * Delete your workspace (careful, this action cannot be undone!)
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (20).png>)
 
 
 
