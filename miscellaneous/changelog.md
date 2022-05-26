@@ -1,5 +1,27 @@
 # Changelog
 
+### 0.12.1 - 26/05/22
+
+**Features:**
+
+* Add helper for Schema Registry strategy field
+* Check/Uncheck all scenarios when running Test Suite or obtaining CI/CD configuration
+* Point releases link to public changelog
+* Make agents more discoverable
+
+**Bug fixes:**
+
+* Fix cluster is shown as reachable when agent is disconnected
+* Fix issue with cluster configuration form when empty properties are provided
+
+**Known issues:**
+
+**Other notes:**
+
+* Disabled ability to edit task name in the node itself due to usability issues
+
+****
+
 ### 0.12.0 - 23/05/22
 
 #### Features:
