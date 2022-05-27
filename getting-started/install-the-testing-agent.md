@@ -104,7 +104,7 @@ For CI workflows, please read [our dedicated documentation](../features/ci-cd-au
 You should see `Started Agent` in the logs.&#x20;
 
 {% hint style="info" %}
-If you observe an error regarding the Java Runtime (class file version 55.0), please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version of Java. The Agent supports **Java 8+**.
+If you observe an error regarding the Java Runtime (class file version 55.0), please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version of Java. The Agent supports **Java 11+**.
 {% endhint %}
 
 Navigate back **** to the Testing application and **refresh** the connection indicator. If installation was successful, you will see the green `CONNECTED` indicator next to your Agent.
