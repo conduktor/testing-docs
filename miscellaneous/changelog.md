@@ -5,11 +5,10 @@
 **Features:**
 
 * Add an Onboarding module to help you get started !
-* Make Agent tab more visible and warn if a connected agent is necessary
 * Replace menu icons with some easier to recognize
 * Disable Cluster refresh if no agent is selected
 * Improve notification messages UI
-* Migrate Test Suite runs to a dedicated page (isolated for now)
+* Migrate Test Suite run details to a dedicated page
 
 **Bug fixes:**
 
