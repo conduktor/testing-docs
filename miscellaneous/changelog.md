@@ -1,5 +1,27 @@
 # Changelog
 
+### 0.13.0 - 01/06/22
+
+**Features:**
+
+* Add an Onboarding module to help you get started !
+* Make Agent tab more visible and warn if a connected agent is necessary
+* Replace menu icons with some easier to recognize
+* Disable Cluster refresh if no agent is selected
+* Improve notification messages UI
+* Migrate Test Suite runs to a dedicated page (isolated for now)
+
+**Bug fixes:**
+
+* Fix the sorting of events on the Home view
+* Fix JSON registry serde not validating the data
+
+**Known issues:**
+
+**Other notes:**
+
+###
+
 ### 0.12.1 - 26/05/22
 
 **Features:**
