@@ -1,5 +1,29 @@
 # Changelog
 
+### 0.13.1 - 08/06/22
+
+**Features:**
+
+* Updated variable values are now visible in the execution details
+* Produced records data can now be viewed in the execution details
+* Improved the Agent creation flow drastically and provide commands to download on run on your OS&#x20;
+* Add a log on the Agent when a new version is available
+
+**Bug fixes:**
+
+* Fix some cluster configuration error handling, where the Submit button would do nothing
+* Fixed some issues with the Generator
+* Fixed some issues when switching to and from DSL view
+* Fixed Executions becoming unlisted when the relative agent token is deleted
+
+**Known issues:**
+
+**Other notes:**
+
+****
+
+****
+
 ### 0.13.0 - 01/06/22
 
 **Features:**
