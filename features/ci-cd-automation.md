@@ -44,7 +44,7 @@ To obtain the config, see [obtaining the CI configuration](ci-cd-automation.md#o
 
 To obtain the CI configuration for executing your tests in an automated manner, you must first have a [Test Suite ](building-tests/test-suites.md)created.
 
-From within the test suite, select the **Integrate with CI** button.
+From within the test suite, select the **Integrate with CI/CD** button.
 
 ![](<../.gitbook/assets/image (162).png>)
 
