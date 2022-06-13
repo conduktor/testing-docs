@@ -10,25 +10,41 @@ Conduktor Testing supports automated execution of Test Scenarios via the CI Agen
 
 ## Configuring the CI Agent
 
-The pre-requisite for executing tests in your CI environment is obtaining the relevant token.&#x20;
+The pre-requisite for executing tests in your CI environment is configuring the CI Agent.&#x20;
 
-> A single token can be used in multiple CI process in parallel. However for audit purposes, we recommend creating new tokens when the scope or access changes.
+> A single agent token can be used in multiple CI process in parallel. However for audit purposes, we recommend creating new agents when the scope or access changes.
 
-This can be obtained from the **Tokens** tab by selecting **Create new token**
+This can be obtained from the **Agents** tab by selecting **Create an agent.**
 
-![](<../.gitbook/assets/image (139).png>)
+![](<../.gitbook/assets/image (8).png>)
 
-Select **CI Agent** from the modal selection, and click **Create token**
+Select **CI Agent** and click **Create.**
 
-**Copy** the newly generated token and store it somewhere secure. Careful, as you will only be shown the token **** once!
+### **Download the Token**
 
-![](<../.gitbook/assets/image (114).png>)
+**Download** the newly generated token and store it somewhere secure.&#x20;
+
+{% hint style="danger" %}
+Careful, as **you will only be shown the token once!** So make sure you download it and store it somewhere secure
+{% endhint %}
+
+![](<../.gitbook/assets/image (34).png>)
+
+### Example Github Action
+
+Select the **Github Action** tab to see an example command for executing test scenarios in your CI/CD environment.
+
+Note you can use this template,  but you will need to replace the **'CONFIG'** dependency.&#x20;
+
+To obtain the config, see [obtaining the CI configuration](ci-cd-automation.md#obtaining-the-ci-configuration).&#x20;
+
+![](<../.gitbook/assets/image (27).png>)
 
 ## Obtaining the CI Configuration
 
-To obtain the CI configuration for executing your tests in an automated manner, you must first have a [Test Suite ](building-tests/test-suites.md)defined.
+To obtain the CI configuration for executing your tests in an automated manner, you must first have a [Test Suite ](building-tests/test-suites.md)created.
 
-From inside the test suite, select the **Integrate with CI** button.
+From within the test suite, select the **Integrate with CI** button.
 
 ![](<../.gitbook/assets/image (162).png>)
 
@@ -40,7 +56,7 @@ On the next screen, you will be displayed the **CI configuration.** This will be
 
 **Copy** the JSON to the clipboard.
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (1).png>)
 
 ## Using the CI Configuration
 

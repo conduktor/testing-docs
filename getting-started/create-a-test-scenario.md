@@ -14,7 +14,7 @@ From within your [Workspace](../features/workspace.md), navigate to the **Test S
 
 Give your test suite a name, for example, 'My First Test Suite'.
 
-![](<../.gitbook/assets/image (34).png>)
+![](<../.gitbook/assets/image (34) (1).png>)
 
 ## Create a Test Scenario
 
