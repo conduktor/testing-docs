@@ -36,7 +36,7 @@ In the **General** tab, select a configured **Cluster,** and choose the **Topic*
 **Pro Tip:** Use the **Topic preview** button to fetch sample records from your Kafka topic
 {% endhint %}
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1).png>)
 
 Navigate to the **Data** tab and select the **serialization format** for your message key/value.&#x20;
 

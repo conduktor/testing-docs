@@ -6,7 +6,7 @@
 ## Getting Started
 
 * [Sign up to Conduktor Testing](getting-started/sign-up-to-conduktor-testing.md)
-* [Install the Testing Agent](getting-started/install-the-testing-agent.md)
+* [Setup the Testing Agent](getting-started/install-the-testing-agent.md)
 * [Connect to a Kafka Cluster](getting-started/connect-to-a-kafka-cluster.md)
 * [Create a Test Scenario](getting-started/create-a-test-scenario.md)
 

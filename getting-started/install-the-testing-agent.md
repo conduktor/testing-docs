@@ -1,63 +1,83 @@
-# Install the Testing Agent
+# Setup the Testing Agent
 
 The Testing Agent is a micro-application that runs on your desktop, private network or CI environment. It ensures you can reach clusters that your host has access to securely and with isolation.
 
-First, **register** the Testing Agent in your Workspace.
+When you **Create** the Testing Agent in your Workspace, you will be provided the OS specific commands for **Running** the Agent.&#x20;
 
-Then, **install** the Testing Agent to run [Test Scenarios](../features/building-tests/test-scenarios.md). ****&#x20;
+You **must** setup the Testing Agent to execute [Test Scenarios](../features/building-tests/test-scenarios.md).
 
 {% hint style="success" %}
 Testing Agent can be installed and used on GNU/Linux, macOS, FreeBSD, and Windows. You can install it:
 
-* In a container.
-* By downloading a binary manually.
+* In a container
+* By downloading a binary manually
 {% endhint %}
 
-## Agent Registration&#x20;
+## Agent Setup&#x20;
 
-From within the Conduktor Testing UI, navigate to the **Tokens** tab. Note you may need to create a [Workspace](../features/workspace.md) first.
+From within the Conduktor Testing UI, navigate to the **Agents** tab. Note you may need to create a [Workspace](../features/workspace.md) first.
 
-![](<../.gitbook/assets/image (137).png>)
+![](<../.gitbook/assets/image (27).png>)
 
-Select **Create a token** to begin the registration process.
+Provide a **Name** to identify your agent, and confirm whether it will be personal, organisational, or used in your CI/CD environment.
 
-Provide a **Name** to identify your agent, and confirm if it will be personal, organisational, or used in your CI environment.
-
-* **Personal Agent:** Only you will have access to this. For example, running locally on your own machine or server.
-* **Organisation Agent**: Your colleagues or team-mates will also have access to this. For example, running inside a company server or network.
-* **CI Agent:** You will use this token for executing tests in CI/CD jobs.
+* **Personal Agent:** For running locally on your own machine or server.
+* **Organisation Agent**: For running inside a company server or network.
+* **CI Agent:** You will use this token for executing tests in CI/CD jobs. Note this is only relevant when you have already created meaningful tests, and want to automate their execution.
   * __[_Learn more_](../features/ci-cd-automation.md) _about using the CI Agent_
 
-![](<../.gitbook/assets/image (31).png>)
+Select **Create** to generate the commands for **downloading** and **running** your Agent.&#x20;
 
-Select **Create token** to generate your token on the next screen.&#x20;
+## Run the Testing Agent
 
-{% hint style="danger" %}
-You will only be shown the token **once**, so ensure you store it somewhere securely.&#x20;
+Select **** the relevant **OS** for running your Agent. You will be provided commands for **downloading** and **running** the Agent on:
+
+* MacOS
+* Linux
+* Windows
+* Docker
+
+{% hint style="info" %}
+Using Docker introduces complexity when trying to reach clusters on localhost, or referencing certificates on your local file system. \
+For these use cases, we recommend using a [binary distribution](install-the-testing-agent.md#binary-installation).
 {% endhint %}
 
-![](<../.gitbook/assets/image (73).png>)
-
-**Copy** the token, as we will use it in the next step.
+![](<../.gitbook/assets/image (10).png>)
 
 {% hint style="success" %}
 A token can be used by **multiple** agents, allowing it to scale horizontally. \
-However when running agents in different locations, with different access or different resources, you should create separate tokens.
+However when running agents in different locations, or with different access or different resources, you should create separate tokens.
 {% endhint %}
 
-## Agent Installation&#x20;
+### Download the Token
 
-### Binary installation
+{% hint style="danger" %}
+You will only be shown the token **once**, so it's recommended you **Download** the token and store it somewhere secure.
+{% endhint %}
 
-**Java 11+** is required for running the Testing Agent.
+### Validate the Connection
 
-If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version.
+After executing the commands, you should see `Agent connected!` in the logs.&#x20;
 
-Download the **latest version** of the Conduktor Testing Agent:
+{% hint style="info" %}
+If you observe an error regarding the Java Runtime (class file version 55.0), please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version of Java. The Agent supports **Java 11+**.
+{% endhint %}
 
-[https://github.com/conduktor/testing/releases/](https://github.com/conduktor/testing/releases/)
+Assuming setup was successful, you will see the green `Connection is successful!` message within the Conduktor Testing UI.
 
-**Run** the below command via command line, populating the token parameter with your newly generated token.
+Ensure that your newly created Agent is selected in the left-hand navigation menu.&#x20;
+
+![](<../.gitbook/assets/image (11).png>)
+
+Now you have the Testing Agent installed, you will be able to reach clusters that your host has access to within the Testing application. Continue to [connecting a Kafka cluster](connect-to-a-kafka-cluster.md).
+
+## Binary Installation&#x20;
+
+**Java 11+** is required for running the Testing Agent. If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads/) a more recent Java version.
+
+### [Download](https://releases.conduktor.io/testing-agent-jar) the Conduktor Testing Agent
+
+Then, **Run** the below command via command line, populating the token parameter with your newly generated token.
 
 ```
 java -jar conduktor-testing-agent-*.jar --token=<TOKEN>
@@ -91,24 +111,9 @@ services:
       TOKEN: <TOKEN>
 ```
 
-
-
-### Running in the CI
+## Running in your CI/CD Environment&#x20;
 
 The Testing Agent is a long-running process, and should not be used in a CI pipeline.
 
 For CI workflows, please read [our dedicated documentation](../features/ci-cd-automation.md).
 
-## Validate the Testing Agent
-
-You should see `Started Agent` in the logs.&#x20;
-
-{% hint style="info" %}
-If you observe an error regarding the Java Runtime (class file version 55.0), please [download](https://www.oracle.com/java/technologies/downloads/) a more recent version of Java. The Agent supports **Java 11+**.
-{% endhint %}
-
-Navigate back **** to the Testing application and **refresh** the connection indicator. If installation was successful, you will see the green `CONNECTED` indicator next to your Agent.
-
-![](<../.gitbook/assets/image (69).png>)
-
-Now you have the Testing Agent installed, you will be able to reach clusters that your host has access to within the Testing application. Continue to [connecting a Kafka cluster](connect-to-a-kafka-cluster.md).

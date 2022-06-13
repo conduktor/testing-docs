@@ -141,7 +141,7 @@ It's important that the [Testing Agent](install-the-testing-agent.md) is running
 
 Select **Connection** from your Red Hat Kafka Instance
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 From within the slide-out menu, choose **Create service account**
 
