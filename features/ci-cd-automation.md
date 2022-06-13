@@ -38,7 +38,7 @@ Note you can use this template,  but you will need to replace the **'CONFIG'** d
 
 To obtain the config, see [obtaining the CI configuration](ci-cd-automation.md#obtaining-the-ci-configuration).&#x20;
 
-![](<../.gitbook/assets/image (27).png>)
+![](<../.gitbook/assets/image (27) (1).png>)
 
 ## Obtaining the CI Configuration
 

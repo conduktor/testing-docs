@@ -17,7 +17,7 @@ Testing Agent can be installed and used on GNU/Linux, macOS, FreeBSD, and Window
 
 From within the Conduktor Testing UI, navigate to the **Agents** tab. Note you may need to create a [Workspace](../features/workspace.md) first.
 
-![](<../.gitbook/assets/image (27) (1).png>)
+![](<../.gitbook/assets/image (27) (1) (1).png>)
 
 Provide a **Name** to identify your agent, and confirm whether it will be personal, organisational, or used in your CI/CD environment.
 

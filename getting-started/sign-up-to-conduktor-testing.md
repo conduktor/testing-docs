@@ -18,7 +18,7 @@ During signup, you will be asked to create an **organization.**&#x20;
 
 Note that the organization name will be used in the URL used to access Conduktor Testing.&#x20;
 
-![](<../.gitbook/assets/image (27) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (27) (1) (1) (1) (1).png>)
 
 **Invite any colleagues** that you would like to collaborate with inside Conduktor Testing.
 
