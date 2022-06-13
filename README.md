@@ -6,6 +6,8 @@ description: Learn how to get started with Conduktor Testing
 
 Welcome to the Conduktor Testing documentation! Our Testing product supports automated testing of applications and pipelines that integrate streaming data.&#x20;
 
+Yes, you can test your event-driven applications, Kafka Streams applications, or any other event streaming architecture!
+
 ![Conduktor Testing ](<.gitbook/assets/image (27).png>)
 
 ## Get Started
