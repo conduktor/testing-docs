@@ -1,6 +1,33 @@
 # Changelog
 
-### 0.13.1 - 08/06/22
+## 0.13.3 - 14/06/22
+
+**Bug fixes:**
+
+* Fix freezing of the clusters view introduced in 0.13.2
+
+## 0.13.2 - 13/06/22
+
+**Features:**
+
+* Enable random data generation for Avro (Custom + Schema Registry), JSON, Protobuf and MessagePack
+
+**Bug fixes:**
+
+* Fix white screen on consumer DSL view
+* Fix issue when trying to run Test Suites
+
+**Known issues:**
+
+* Release introduced an issue with cluster connections / freezing the cluster screen, so was  swiftly rolled back to issue fix
+
+**Other notes:**
+
+*   Reduce the number of notifications on network error
+
+    ****
+
+## 0.13.1 - 08/06/22
 
 **Features:**
 
@@ -16,15 +43,7 @@
 * Fixed some issues when switching to and from DSL view
 * Fixed Executions becoming unlisted when the relative agent token is deleted
 
-**Known issues:**
-
-**Other notes:**
-
-****
-
-****
-
-### 0.13.0 - 01/06/22
+## 0.13.0 - 01/06/22
 
 **Features:**
 
@@ -39,13 +58,7 @@
 * Fix the sorting of events on the Home view
 * Fix JSON registry serde not validating the data
 
-**Known issues:**
-
-**Other notes:**
-
-###
-
-### 0.12.1 - 26/05/22
+## 0.12.1 - 26/05/22
 
 **Features:**
 
@@ -59,15 +72,11 @@
 * Fix cluster is shown as reachable when agent is disconnected
 * Fix issue with cluster configuration form when empty properties are provided
 
-**Known issues:**
-
 **Other notes:**
 
 * Disabled ability to edit task name in the node itself due to usability issues
 
-****
-
-### 0.12.0 - 23/05/22
+## 0.12.0 - 23/05/22
 
 #### Features:
 
@@ -89,13 +98,7 @@
 * Fix some UI alignment issues on wide screens
 * Remove confusing X in Topic Preview, closing the slideout
 
-**Known issues:**
-
-**Other notes:**
-
-****
-
-### 0.11.0 - 16/05/22
+## 0.11.0 - 16/05/22
 
 #### Features:
 
@@ -117,17 +120,7 @@
 * Fix back navigation in execution always going to Insight view
 * Prevent using special characters for variables and environment variables
 
-
-
-**Known issues:**
-
-**Other notes:**
-
-###
-
-###
-
-### 0.10.0 - Public Beta - 09/05/22
+## 0.10.0 - Public Beta - 09/05/22
 
 Initial public release enabling E2E Kafka testing scenarios. Release inclusive of the Conduktor Testing UI, and the agent micro-application enabling users to reach clusters that the host has access to securely and with isolation.
 
@@ -188,8 +181,6 @@ Initial public release enabling E2E Kafka testing scenarios. Release inclusive o
 * High throughput scenario executions may fail or be slow, while we are calibrating the platform for the load
 * Agents may go stale and become unreachable after some time
 * The DSL view of a task is missing a few features relative to the UI view, we suggest that you rely on the UI view or on the Scenario DSL view while we fix this.
-
-**Other notes:**
 
 
 
