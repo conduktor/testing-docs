@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.14.0 - 20/06/22
+
+**Features:**
+
+* Add time & offset-based strategies for Consumer tasks (e.g. consume from yesterday, consume from offset x)
+* Redesign of Test Suite details page
+* Add navigation to run suite history via new 'Runs' tab from within a Test Suite
+* Align schema preview header style with topic preview
+
+**Bug fixes:**
+
+* Fix issue impacting cluster configuration updates
+
+**Other notes:**
+
+* Fetch agent connectivity state for focused page only (i.e. restrict if a user has multiple tabs open) &#x20;
+
 ## 0.13.3 - 14/06/22
 
 **Bug fixes:**
