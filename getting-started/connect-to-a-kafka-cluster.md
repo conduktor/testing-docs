@@ -77,6 +77,7 @@ For example:
 ```
 ssl.truststore.location=/path/to/client.truststore-6597145213355562865.jks
 ssl.truststore.password=test5494c04
+security.protocol=SSL
 ssl.keystore.type=PKCS12
 ssl.keystore.location=/path/to/client.keystore-12124676830593951314.p12
 ssl.keystore.password=test632ecc3
