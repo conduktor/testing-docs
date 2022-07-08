@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.15.0 - 07/07/22
+
+**Features:**
+
+* HTTP task type added for use in Test Scenarios
+* Enable retry of HTTP requests until conditions are met
+* Check HTTP response data (Status code, Body, Headers, Response time, Response size)
+* New 'Template (Mustache)' editor that improves the UX and also adds support for functions and contextual, macro-generated data. E.g. randomIp, randomEmail, randomTimestamp
+
+**Bug fixes:**
+
+* Fix bug impacting form display when resizing the slideout
+* Fix bug causing environment/agent selection showing behind slideout form
+* Fix bug causing newly created agent to not show in list
+* Fix bug when returning from execution details
+* Fix typo on command used to download agent on Windows that caused it to fail
+* Onboarding module display bug
+
+**Other notes:**
+
+* Update send feedback link with new URL
+
 ## 0.14.0 - 20/06/22
 
 **Features:**
