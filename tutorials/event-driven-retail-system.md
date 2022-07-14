@@ -30,7 +30,7 @@ Below demonstrates how to build a Test Scenario representing the above architect
 Remember, any dependent applications must be running to validate the scenario. In this case, the User and Promotions Services are considered external applications.
 {% endhint %}
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1).png>)
 
 Note that:
 

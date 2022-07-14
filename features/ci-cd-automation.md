@@ -16,7 +16,7 @@ The pre-requisite for executing tests in your CI environment is configuring the 
 
 This can be obtained from the **Agents** tab by selecting **Create an agent.**
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (1).png>)
 
 Select **CI Agent** and click **Create.**
 
@@ -28,7 +28,7 @@ Select **CI Agent** and click **Create.**
 Careful, as **you will only be shown the token once!** So make sure you download it and store it somewhere secure
 {% endhint %}
 
-![](<../.gitbook/assets/image (34).png>)
+![](<../.gitbook/assets/image (34) (1).png>)
 
 ### Example Github Action
 
@@ -38,7 +38,7 @@ Note you can use this template,  but you will need to replace the **'CONFIG'** d
 
 To obtain the config, see [obtaining the CI configuration](ci-cd-automation.md#obtaining-the-ci-configuration).&#x20;
 
-![](<../.gitbook/assets/image (27) (1).png>)
+![](<../.gitbook/assets/image (27) (1) (1).png>)
 
 ## Obtaining the CI Configuration
 
@@ -56,7 +56,7 @@ On the next screen, you will be displayed the **CI configuration.** This will be
 
 **Copy** the JSON to the clipboard.
 
-![](<../.gitbook/assets/image (8) (1).png>)
+![](<../.gitbook/assets/image (8) (1) (1).png>)
 
 ## Using the CI Configuration
 

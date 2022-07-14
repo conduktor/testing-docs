@@ -38,7 +38,7 @@ In this case, you will be provided a helper modal when clicking the **'+'** butt
 
 Within this modal, select from an available list of environment variables.
 
-![](<../../.gitbook/assets/image (118).png>)
+![](<../../.gitbook/assets/image (118) (1).png>)
 
 ## JavaScript
 

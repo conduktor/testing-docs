@@ -8,7 +8,7 @@ Welcome to the Conduktor Testing documentation! Our Testing product supports aut
 
 Yes, you can test your event-driven applications, Kafka Streams applications, or any other event streaming architecture!
 
-![Conduktor Testing ](<.gitbook/assets/image (27).png>)
+![Conduktor Testing ](<.gitbook/assets/image (27) (1).png>)
 
 ## Get Started
 

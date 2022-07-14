@@ -17,7 +17,7 @@ Testing Agent can be installed and used on GNU/Linux, macOS, FreeBSD, and Window
 
 From within the Conduktor Testing UI, navigate to the **Agents** tab. Note you may need to create a [Workspace](../features/workspace.md) first.
 
-![](<../.gitbook/assets/image (27) (1) (1).png>)
+![](<../.gitbook/assets/image (27) (1) (1) (1).png>)
 
 Provide a **Name** to identify your agent, and confirm whether it will be personal, organisational, or used in your CI/CD environment.
 
@@ -42,7 +42,7 @@ Using Docker introduces complexity when trying to reach clusters on localhost, o
 For these use cases, we recommend using a [binary distribution](install-the-testing-agent.md#binary-installation).
 {% endhint %}
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 {% hint style="success" %}
 A token can be used by **multiple** agents, allowing it to scale horizontally. \
@@ -67,7 +67,7 @@ Assuming setup was successful, you will see the green `Connection is successful!
 
 Ensure that your newly created Agent is selected in the left-hand navigation menu.&#x20;
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 Now you have the Testing Agent installed, you will be able to reach clusters that your host has access to within the Testing application. Continue to [connecting a Kafka cluster](connect-to-a-kafka-cluster.md).
 

@@ -21,6 +21,7 @@
     * [Consumer Task](features/building-tests/tasks/consumer-task.md)
     * [Set Variable Task](features/building-tests/tasks/set-variable-task.md)
     * [Task Ports](features/building-tests/tasks/task-ports.md)
+    * [HTTP Task](features/building-tests/tasks/http-task.md)
   * [Test Checks](features/building-tests/test-checks/README.md)
     * [Accessing Kafka message data](features/building-tests/test-checks/accessing-kafka-message-data/README.md)
       * [Check the partition of a message produced to Kafka](features/building-tests/test-checks/accessing-kafka-message-data/check-the-partition-of-a-message-produced-to-kafka.md)

@@ -39,7 +39,7 @@ Currently supported SerDes formats:
 
 ## Create a simple producer task&#x20;
 
-When inside the editor for a new scenario, select the **Start Scenario** button and select **Producer** from the dropdown menu.
+When inside the editor for a new scenario, select the **Scenario Start** button and select **Producer** from the dropdown menu.
 
 ![](<../../../.gitbook/assets/image (53).png>)
 
