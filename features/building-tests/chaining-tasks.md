@@ -1,15 +1,15 @@
 # Chaining tasks
 
-You can chain tasks, by clicking on the start node or on a **task output port**, then selecting the task type to create.&#x20;
+You can chain tasks by clicking on the start node or on a **task output port**, then selecting the task type to create.&#x20;
 
 ![Consumers have 2 output ports](../../.gitbook/assets/output-ports.png)
 
-Consumer for example have 2 output ports.&#x20;
+Consumers for example have 2 output ports.&#x20;
 
 * **on record** will trigger the next task on each record consumed. The record data will be accessible in the next task
 * **on end triggers** the next task when the consumer lifecycle ends. Consumed records are not accessible to subsequent tasks
 
-Links can be deleted by clicking on the X icon at the middle of a line
+Links can be deleted by clicking on the cross icon in the middle of a line
 
 ![Deleting a link](../../.gitbook/assets/delete-link.webp)
 
