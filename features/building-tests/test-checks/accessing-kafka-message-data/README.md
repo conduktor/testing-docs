@@ -6,6 +6,10 @@ description: Access data from your message key, value or the associated metadata
 
 When you produce or consume records from Kafka you may need to **access the data for checks**.&#x20;
 
+{% hint style="info" %}
+Looking for how to access the **previous** task data ? Here is the [documentation ](../../chaining-tasks.md#accessing-the-output)
+{% endhint %}
+
 For example:
 
 * to validate if an attribute inside a JSON record is correct
@@ -24,12 +28,14 @@ _Note the information you are able to access depends on the task you are making 
 
 It's possible to make checks on the metadata collected when you produce to Kafka.
 
-| Attribute | Type      | How to access: Field selection (JQ) | How to access: JavaScript |
-| --------- | --------- | ----------------------------------- | ------------------------- |
-| Offset    | Number    | .record.offset                      | context.record.offset     |
-| Partition | Number    | .record.partition                   | context.record.partition  |
-| Timestamp | Timestamp | .record.timestamp                   | context.record.timestamp  |
-| Topic     | String    | .record.topic                       | context.record.topic      |
+| Attribute | Type         | How to access: Field selection (JQ) | How to access: JavaScript |
+| --------- | ------------ | ----------------------------------- | ------------------------- |
+| Key       | User-defined | .record.key                         | context.record.key        |
+| Value     | User-defined | .record.value                       | context.record.value      |
+| Offset    | Number       | .record.offset                      | context.record.offset     |
+| Partition | Number       | .record.partition                   | context.record.partition  |
+| Timestamp | Timestamp    | .record.timestamp                   | context.record.timestamp  |
+| Topic     | String       | .record.topic                       | context.record.topic      |
 
 {% hint style="info" %}
 See an [example](./#example-check-the-value-of-an-attribute-inside-a-json-message-value) of how to check the partition of a record produced to Kafka
