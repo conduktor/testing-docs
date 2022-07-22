@@ -73,6 +73,8 @@ For convenience, you can copy the reference of a task on the canvas at any time 
 
 ### Accessible properties per node type &#x20;
 
+For readability, we've omitted the `.source.the_task_reference.` prefix when describing the available properties below.
+
 #### Kafka Consumer and Producer&#x20;
 
 * `record.key` : the key of the record. If it is a data structure (JSON, Avro, Proto etc), you can access sub-properties directly, ex: `record.key.some_property`
