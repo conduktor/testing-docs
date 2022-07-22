@@ -9,6 +9,10 @@ Consumers for example have 2 output ports.&#x20;
 * **on record** will trigger the next task on each record consumed. The record data will be accessible in the next task
 * **on end triggers** the next task when the consumer lifecycle ends. Consumed records are not accessible to subsequent tasks
 
+You can find more details on available ports per task type in [this document](tasks/task-ports.md)
+
+
+
 Links can be deleted by clicking on the cross icon in the middle of a line
 
 ![Deleting a link](../../.gitbook/assets/delete-link.webp)
