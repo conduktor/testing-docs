@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.16.0 - 22/07/22
+
+**Features:**
+
+* Greatly simplified how to reference parent task data in child tasks. Check our new documentation [here](../features/building-tests/chaining-tasks.md#accessing-the-output)
+* Extended data redaction to produced data, http responses and variables
+* Improved some error messages on outdated agents and unknown commands
+* Set Variable task name is now editable
+
+
+
+**Bug fixes:**
+
+* Fix cancellation not being propagated to the correct agent when multiple agents are on the same private key
+* Fix connectivity check for Aiven clusters
+* Fix execution being in "Lost" status for a short time on start
+* Various frontend fixes around the new Http task
+* Fix "Waiting connectivity" when creating agent not refreshing
+* Fix Producer name not saved on create
+
+
+
 ## 0.15.0 - 07/07/22
 
 **Features:**
