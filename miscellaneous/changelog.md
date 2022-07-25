@@ -22,6 +22,10 @@
 
 
 
+**Other notes / Known bugs:**
+
+* When setting multiple variables in a single Variable node, only the first one will be available in children nodes
+
 ## 0.15.0 - 07/07/22
 
 **Features:**
