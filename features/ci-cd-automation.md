@@ -106,5 +106,5 @@ jobs:
                   "redactCheckData": false
                 }
               }
-        run: /opt/docker/bin/conduktor-testing
+        run: /opt/docker/bin/runner-ci-build
 ```
