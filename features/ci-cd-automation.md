@@ -111,7 +111,7 @@ jobs:
 
 ## Running on Circle CI
 
-Below it will show an example of a workflow for circle ci, utilising the CI agent to automate execution of tests.
+Below it will show an example of a workflow for circle ci, utilizing the CI agent to automate execution of tests.
 
 Note the parameters:
 
@@ -161,3 +161,50 @@ workflows:
       - conduktor-testing
 ```
 
+## Running on gitlab CI/CD
+
+
+
+Below it will show an example of a pipeline for gitlab CI/CD, utilising the CI agent to automate execution of tests.
+
+Note the parameters:
+
+* **Container image**: `ghcr.io/conduktor/testing-agent-ci:latest`
+* **Token**: _Replace with your CI token_
+* **CI Configuration:** The CI configuration obtained in the prior step
+
+> If you copied the Base64 version of the configuration, you should use the _CONFIG\_BASE64_ environment variable instead.&#x20;
+
+```yaml
+stages:
+  - test
+
+conduktor-testing-job:   
+  stage: test
+  image: 
+    name: ghcr.io/conduktor/testing-agent-ci:latest
+    entrypoint: [""]
+  variables:
+    TOKEN: <YOUR CI TOKEN>
+    CONFIG: |
+      {
+        "scenarios": [
+          {
+          {
+            "id": "6C1MLj8jFqHAfzdvDFCW4rx"
+          },
+          {
+            "id": "b8SNLtyWdWmPfc6Mt33fYr"
+          },
+          {
+            "id": "7e7AQMPoLjqSfvZ9W9yoGF"
+          }
+        ],
+        "iterations": 3,
+        "dataRedactionConfig": {
+          "redactRecordData": true,
+          "redactCheckData": false
+        }
+      }
+script: /opt/docker/bin/runner-ci-build
+```
