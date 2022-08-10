@@ -86,7 +86,5 @@ Belo demonstrates how to use **jq** to create a test check on the Value Schema I
 
 ![Checking Value Schema Id](<../../.gitbook/assets/image (6).png>)
 
-![](<../../.gitbook/assets/image (6).png>)
-
 
 
