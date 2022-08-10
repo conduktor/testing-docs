@@ -159,7 +159,7 @@ On the **Checks** tab, add a validation on the response code.
 * Add a **Check** on the contents of the message, using the below conditions
   * `.record.value.foo` = bar
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (5).png>)
 
 #### Run Scenario
 

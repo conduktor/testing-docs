@@ -26,7 +26,7 @@ Enter the variable value in the **Value** input, and add your variable name in t
 Note you can switch between the different [Custom Inputs](../../custom-inputs.md) for assigning values to variables using different methods. For example, via a JavaScript snippet.&#x20;
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (4) (1).png>)
 
 ## **Accessing a local variable**
 

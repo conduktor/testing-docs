@@ -45,14 +45,16 @@ See an [example](./#example-check-the-value-of-an-attribute-inside-a-json-messag
 
 Make checks on the key & value for any consumed record(s) and associated metadata.&#x20;
 
-| Attribute | Type         | How to access: Field selection (JQ) | How to access: JavaScript |
-| --------- | ------------ | ----------------------------------- | ------------------------- |
-| Key       | User-defined | .record.key                         | context.record.key        |
-| Value     | User-defined | .record.value                       | context.record.value      |
-| Offset    | Number       | .record.offset                      | context.record.offset     |
-| Partition | Number       | .record.partition                   | context.record.partition  |
-| Timestamp | Timestamp    | .record.timestamp                   | context.record.timestamp  |
-| Topic     | String       | .record.topic                       | context.record.topic      |
+| Attribute       | Type         | How to access: Field selection (JQ) | How to access: JavaScript    |
+| --------------- | ------------ | ----------------------------------- | ---------------------------- |
+| Key             | User-defined | .record.key                         | context.record.key           |
+| Value           | User-defined | .record.value                       | context.record.value         |
+| Offset          | Number       | .record.offset                      | context.record.offset        |
+| Partition       | Number       | .record.partition                   | context.record.partition     |
+| Timestamp       | Timestamp    | .record.timestamp                   | context.record.timestamp     |
+| Topic           | String       | .record.topic                       | context.record.topic         |
+| Key Schema Id   | Number       | .record.keySchemaId                 | context.record.keySchemaId   |
+| Value Schema Id | Number       | .record.valueSchemaId               | context.record.valueSchemaId |
 
 {% hint style="info" %}
 See an [example](check-the-value-inside-a-json-message-consumed-from-kafka.md) of how to check an attribute inside a JSON message value

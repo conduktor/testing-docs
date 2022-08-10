@@ -40,7 +40,7 @@ See [Accessing Kafka message data](building-tests/test-checks/accessing-kafka-me
 
 Below shows a **more powerful JQ example**. It utilizes a Boolean check to evaluate the length of a value within a defined range.
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
 
 ## Template (mustache)&#x20;
 

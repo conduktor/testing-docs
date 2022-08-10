@@ -4,7 +4,7 @@ Add a 'Producer' task to your test scenario
 
 Open the task in edit mode and navigate to the 'Checks' tab in the slide-out component.
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (1).png>)
 
 Select the **+ button** to create a new check
 
