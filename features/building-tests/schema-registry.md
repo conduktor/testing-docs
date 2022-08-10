@@ -6,15 +6,15 @@ description: Learn how to integrate Schema Registry in your Test Scenarios
 
 Note that this document assumes you have configured Schema Registry when adding a Cluster to your workspace. If you have not done this step, please refer to [this](https://docs.testing.conduktor.io/getting-started/connect-to-a-kafka-cluster#schema-registry) section.
 
-We currently support Avro, Protobuf and JSON schema registry types.&#x20;
+We currently support **Avro**, **Protobuf** and **JSON** schema registry types.&#x20;
 
-It's possible to produce and consume message keys and values with a specified:
+It's possible to produce and consume messages with a specified:
 
 * Strategy
 * Subject
 * Version
 
-Additionally, you can filter messages consumed that contain a specified schema Id.
+Additionally, you can both filter and check messages consumed based on the Schema Id.
 
 **Jump to:**
 
