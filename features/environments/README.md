@@ -20,7 +20,7 @@ Give your environment a **name** and select a **colour** to associate with the e
 
 Your newly labelled environment will now be visible in your list of environments.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 ## Create an environment variable
 

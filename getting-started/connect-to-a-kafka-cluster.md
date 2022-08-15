@@ -148,7 +148,7 @@ From within the slide-out menu, choose **Create service account**
 
 ![](<../.gitbook/assets/image (12).png>)
 
-Text
+Copy the credentials that are generated in the subsequent modal.
 
 ![](<../.gitbook/assets/image (126).png>)
 
@@ -168,6 +168,29 @@ security.protocol=SASL_SSL
 
 ## Connecting to an MSK cluster
 
-Connecting to MSK is possible through utilising a specialised Kafka proxy.
+For connecting to MSK, we recommend installing the [Testing Agent](install-the-testing-agent.md) on an EC2 instance with access to the cluster.&#x20;
 
-We have a [guide](https://docs.conduktor.io/kafka-cluster-connection/setting-up-a-connection-to-kafka/connect-to-amazon-msk) on the documentation for the Conduktor Desktop product. Please refer to this, as the same principle applies for Conduktor Testing.
+{% hint style="info" %}
+Note that you will need to configure **Security Groups** so that the cluster's security group can accept traffic coming from the EC2 instance's security group. See [docs](https://docs.aws.amazon.com/msk/latest/developerguide/create-client-machine.html).&#x20;
+{% endhint %}
+
+When you create an Agent inside the Testing UI, you will be provided the commands for downloading and running it.&#x20;
+
+Execute these commands on your EC2 instance, and you should see the message:
+
+`Agent <agent name> connected!`
+
+![](<../.gitbook/assets/image (7).png>)
+
+From within the Testing UI, you should now be able to see that the Agent is connected:
+
+![](<../.gitbook/assets/image (8).png>)
+
+Navigate to the Clusters tab, and **Create** a new cluster.
+
+* Add the bootstrap servers&#x20;
+  * For MSK, you can find this by selecting the Cluster and clicking '**View client information**'
+* Add any required configuration properties
+
+![](<../.gitbook/assets/image (2).png>)
+

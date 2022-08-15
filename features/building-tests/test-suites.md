@@ -10,6 +10,6 @@ From your Workspace, navigate to to the **Test Suite** tab in the main navigatio
 
 Select **Create New**, you will then be prompted to provide a name.&#x20;
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1).png>)
 
 Now that your test suite is created, you can start creating [test scenarios](test-scenarios.md).
