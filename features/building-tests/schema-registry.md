@@ -29,7 +29,7 @@ Add a [Producer Task](tasks/producer-task.md) to the canvas editor.&#x20;
 
 On the General tab, specify the cluster and topic relevant to your scenario. Then, progress to the 'Data' tab of the form.
 
-![Specifying schema registry value type](../../.gitbook/assets/image.png)
+![Specifying schema registry value type](<../../.gitbook/assets/image (8).png>)
 
 For either the key or value, select the format as the appropriate registry type from the dropdown list. You will then need to specify the [Strategy](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/index.html#sr-schemas-subject-name-strategy), Subject and Version for producing a message.
 

@@ -180,16 +180,16 @@ Execute these commands on your EC2 instance, and you should see the message:
 
 `Agent <agent name> connected!`
 
-![](<../.gitbook/assets/image (7).png>)
+![](../.gitbook/assets/image.png)
 
 From within the Testing UI, you should now be able to see that the Agent is connected:
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (3).png>)
 
 Navigate to the Clusters tab, and **Create** a new cluster.
 
 * Add the bootstrap servers&#x20;
-  * For MSK, you can find this by selecting the Cluster and clicking '**View client information**'
+  * For MSK, you can find this by selecting the Cluster within AWS > MSK and clicking **View client information**
 * Add any required configuration properties
 
 ![](<../.gitbook/assets/image (2).png>)
