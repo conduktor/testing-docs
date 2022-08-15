@@ -112,7 +112,7 @@ From within the cluster configuration modal of the Testing application, **Paste*
 
 Click **Create Cluster** to save your cluster.&#x20;
 
-## Connect to an Aiven cluster
+## Connect to a Aiven cluster
 
 To connect to an Aiven cluster, you must specify the **Access Key**, **Access Certificate**, and **CA Certificate**.
 
@@ -166,7 +166,7 @@ security.protocol=SASL_SSL
 
 ![](<../.gitbook/assets/image (140).png>)
 
-## Connecting to an MSK cluster
+## Connect to a MSK cluster
 
 For connecting to MSK, we recommend installing the [Testing Agent](install-the-testing-agent.md) on an EC2 instance with access to the cluster.&#x20;
 
