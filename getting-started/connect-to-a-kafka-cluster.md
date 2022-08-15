@@ -11,9 +11,9 @@ The ability to reach your cluster will depend on where you have installed the [T
 * [Connect to a local Kafka cluster](connect-to-a-kafka-cluster.md#connect-to-a-local-kafka-cluster)
 * [Connect to a secure Kafka cluster](connect-to-a-kafka-cluster.md#connect-to-a-secure-kafka-cluster)
 * [Connect to a Confluent cluster](connect-to-a-kafka-cluster.md#connect-to-a-confluent-cluster)
-* [Connect to an Aiven cluster](connect-to-a-kafka-cluster.md#connect-to-an-aiven-cluster)
+* [Connect to a Aiven cluster](connect-to-a-kafka-cluster.md#connect-to-an-aiven-cluster)
 * [Connect to a Red Hat cluster](connect-to-a-kafka-cluster.md#connect-to-a-red-hat-cluster)
-* [Connect to an MSK cluster](connect-to-a-kafka-cluster.md#connecting-to-an-msk-cluster)
+* [Connect to a MSK cluster](connect-to-a-kafka-cluster.md#connecting-to-an-msk-cluster)
 
 ## Adding a cluster
 
