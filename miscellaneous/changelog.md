@@ -1,13 +1,11 @@
 # Changelog
 
-##
-
-## 0.17.0 - 22/07/22
+## 0.17.0 - 17/08/22
 
 {% hint style="info" %}
 This release brings ARM support for the CI and agent docker images.
 
-The docker images size have increased significantly, this is temporary while we are optimizing the new multi-arch build. We should be back to normal within the next releases.
+The sizes have increased significantly, this is temporary while we are optimizing the new multi-arch build. We should be back to normal within the next releases.
 {% endhint %}
 
 
