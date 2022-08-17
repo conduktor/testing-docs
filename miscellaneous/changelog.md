@@ -1,5 +1,44 @@
 # Changelog
 
+##
+
+## 0.17.0 - 22/07/22
+
+{% hint style="info" %}
+This release brings ARM support for the CI and agent docker images.
+
+The docker images size have increased significantly, this is temporary while we are optimizing the new multi-arch build. We should be back to normal within the next releases.
+{% endhint %}
+
+
+
+**Features:**
+
+* ARM arch support for the agent & agent-ci docker images
+* Added a new node type: **Load CSV** ! You can now load records from a CSV file present on the agent host, and chain it with for example a producer to push test data directly in your system.\
+  _Make sure to update your agent to 0.17.0 to use this new feature !_&#x20;
+* Improved the Variable preview UI
+* Detect outdated agent and warn in-app
+* Onboarding can now be discarded
+
+
+
+**Bug fixes:**
+
+* Fix deleting events from execution in Error
+* Fix DSL preview loading infinitely on create
+* Fix issue preventing declaring multiple variables at once
+* Fix error page layout
+* Fix github action for CI runner
+
+
+
+**Other notes / Known bugs:**
+
+* We have started to document how to [run our CI Agent for multiple CI/CD providers](../features/ci-cd-automation.md#using-the-ci-configuration-github-actions), for now on Github Action, GitlabCI and CircleCI. We will add more shortly.&#x20;
+
+
+
 ## 0.16.0 - 22/07/22
 
 **Features:**
