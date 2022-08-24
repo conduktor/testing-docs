@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.17.1 - 24/08/22
+
+**Features:**
+
+* Reduce significantly the Agent and CI Agent image size
+* JVM performance and stability improvements
+
+
+
+**Fixes:**
+
+* Remove notification on outdated agent
+
 ## 0.17.0 - 17/08/22
 
 {% hint style="info" %}
