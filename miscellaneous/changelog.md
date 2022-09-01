@@ -6,7 +6,7 @@
 
 * You can now skip server SSL check for both the cluster and the registry. \
   This is especially useful when using custom CA or self-signed certificates, or to debug connectivity issues.\
-  The checkbox is accessible in both tabs of the Cluster Configuration view
+  The checkbox is accessible in both tabs of the Cluster Configuration view. _(this require an agent with version >= 0.17.3)_
 * Add the Source entries in the Template (mustache) editor, allowing you to reference the parent task data easily without needing to remember the path or getting the reference
 
 ## 0.17.2 - 26/08/22
