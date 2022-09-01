@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.17.3 - 01/09/22
+
+**Features**:
+
+* You can now skip server SSL check for both the cluster and the registry. \
+  This is especially useful when using custom CA or self-signed certificates, or to debug connectivity issues.\
+  The checkbox is accessible in both tabs of the Cluster Configuration view
+* Add the Source entries in the Template (mustache) editor, allowing you to reference the parent task data easily without needing to remember the path or getting the reference
+
+## 0.17.2 - 26/08/22
+
+**Chore:**
+
+* dependencies security update
+* UI & design improvements
+
 ## 0.17.1 - 24/08/22
 
 **Features:**
