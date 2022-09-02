@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.18.0 - 02/09/22
+
+**Features:**
+
+* Improving events between proxy and agent making the connection between the 2 more stable
+
 ## 0.17.3 - 01/09/22
 
 **Features**:
