@@ -67,7 +67,9 @@ On the next screen, you will be displayed the **CI configuration.** This will be
 
 ![](<../.gitbook/assets/image (8) (1) (1).png>)
 
-## Using the CI Configuration - Github Actions
+## Using the CI Configuration&#x20;
+
+### Running on Github Actions
 
 Below shows an example Github action, utilising the CI agent to automate execution of tests.
 
@@ -118,7 +120,7 @@ jobs:
         run: /opt/docker/bin/runner-ci-build
 ```
 
-## Running on Circle CI
+### Running on Circle CI
 
 Below is an example of a Circle CI workflow, using the CI agent to automate test execution.
 
@@ -170,7 +172,7 @@ workflows:
       - conduktor-testing
 ```
 
-## Running on Gitlab CI/CD
+### Running on Gitlab CI/CD
 
 Below is an example of a Gitlab CI workflow, using the CI agent to automate test execution.
 
@@ -216,9 +218,13 @@ conduktor-testing-job:
 script: /opt/docker/bin/runner-ci-build
 ```
 
-## Running on Jenkins
+
+
+### Running on Jenkins
 
 Below is an example of a Jenkins pipeline, using the CI agent to automate test execution.
+
+_Prerequisite: Your Jenkins agent should have access to docker daemon._&#x20;
 
 Note the parameters:
 
@@ -226,7 +232,7 @@ Note the parameters:
 * **Token**: _Replace with your CI token_
 * **CI Configuration:** The CI configuration obtained [in the prior step](ci-cd-automation.md#obtaining-the-ci-configuration) (use CONFIG\_BASE64)
 
-```
+```hoon
 pipeline {
     agent any
     stages {
