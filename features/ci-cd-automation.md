@@ -120,13 +120,13 @@ jobs:
 
 ## Running on Circle CI
 
-Below it will show an example of a workflow for circle ci, utilizing the CI agent to automate execution of tests.
+Below is an example of a Circle CI workflow, using the CI agent to automate test execution.
 
 Note the parameters:
 
 * **Container image**: `ghcr.io/conduktor/testing-agent-ci:latest`
 * **Token**: _Replace with your CI token_
-* **CI Configuration:** The CI configuration obtained in the prior step
+* **CI Configuration:** The CI configuration obtained [in the prior step](ci-cd-automation.md#obtaining-the-ci-configuration)
 
 > If you copied the Base64 version of the configuration, you should use the _CONFIG\_BASE64_ environment variable instead.&#x20;
 
@@ -172,15 +172,13 @@ workflows:
 
 ## Running on Gitlab CI/CD
 
-
-
-Below it will show an example of a pipeline for gitlab CI/CD, utilising the CI agent to automate execution of tests.
+Below is an example of a Gitlab CI workflow, using the CI agent to automate test execution.
 
 Note the parameters:
 
 * **Container image**: `ghcr.io/conduktor/testing-agent-ci:latest`
 * **Token**: _Replace with your CI token_
-* **CI Configuration:** The CI configuration obtained in the prior step
+* **CI Configuration:** The CI configuration obtained [in the prior step](ci-cd-automation.md#obtaining-the-ci-configuration)
 
 > If you copied the Base64 version of the configuration, you should use the _CONFIG\_BASE64_ environment variable instead.&#x20;
 
@@ -216,4 +214,32 @@ conduktor-testing-job:
         }
       }
 script: /opt/docker/bin/runner-ci-build
+```
+
+## Running on Jenkins
+
+Below is an example of a Jenkins pipeline, using the CI agent to automate test execution.
+
+Note the parameters:
+
+* **Container image**: `ghcr.io/conduktor/testing-agent-ci:latest`
+* **Token**: _Replace with your CI token_
+* **CI Configuration:** The CI configuration obtained [in the prior step](ci-cd-automation.md#obtaining-the-ci-configuration) (use CONFIG\_BASE64)
+
+```
+pipeline {
+    agent any
+    stages {
+        stage('my-test-suite') {
+            steps {
+                sh '''
+                docker run \
+                    -e TOKEN="<YOUR CI TOKEN>"  \
+                    -e CONFIG_BASE64="<YOUR BASE64 CONFIG>"  \
+                    ghcr.io/conduktor/testing-agent-ci:latest
+                '''
+            }
+        }
+    }
+}
 ```
