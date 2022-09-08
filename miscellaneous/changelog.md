@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.19.1 - 08/09/22
+
+This release contains background work to allow on-premise deployment (work in progress)
+
+## 0.19.0 - 05/09/22
+
+This release contains background work to allow on-premise deployment (work in progress)
+
 ## 0.18.0 - 02/09/22
 
 **Features:**
